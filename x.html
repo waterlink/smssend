@@ -1,0 +1,30 @@
+<form name="Data" action="http://www.mts.com.ua/back/modules/sms/db_sms.php" method="post" class="send_sms">
+	
+<input type="hidden" name="script" value="/ukr/sendsms.php" />
+<input type="hidden" name="sms_tag_id" value="3" />
+<select name="network1" style="width:80px;">
+	<option value="38050">
+	+38 050</option>
+<option value="38066">
+	+38 066</option>
+<option value="38095">
+	+38 095</option>
+<option value="38099">
+	+38 099</option>
+</select>
+<input name="phone1" type="Text" style="" maxlength="7" value="" />
+<input type="hidden" name="24a74f45c872ac804c5acd5dd173622c" value="715939596" />
+<textarea name="message" id="message" style="width:205px; height:95px;" onkeypress="checkSymbol(event)" onkeyup="checkSymbol(event)" onpaste="checkStr()" onclick="checkStr()" maxlength="120">
+</textarea>
+<input type="radio" name="lang" id="lang_lat" value="lat" class="radio" checked="checked" onkeyup="langChange()" onclick="langChange()" />
+<input type="radio" name="lang" id="lang_cyr" value="cyr" class="radio" onkeyup="langChange()" onclick="langChange()" />
+<input type="checkbox" class="checkbox radio" name="translit" id="translit" value="1" />
+<input name="captcha" style="width:60px;" maxlength="6" />
+
+<img src="http://www.mts.com.ua/back/modules/golden/captcha.php?PHPSESSID=e7134555bba956dce247e5bf4f32cd80&amp;rnd=715939596" alt="&#x41A;&#x43E;&#x434;" width="120" height="60" border="0" align="middle" />
+
+<a href="javascript:document.Data.submit();">
+	Send SMS</a>
+
+</form>
+
